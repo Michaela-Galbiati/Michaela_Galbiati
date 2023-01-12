@@ -1,0 +1,487 @@
+@charset "UTF-8";
+html{
+  scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient(to bottom, white, #2776F5, #2534A8, #00155C);
+    margin: 0;
+    padding: 0;
+    height: 8000px;
+    width: 100%;
+    overflow-x: hidden;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#amarelo{
+    background-color: yellow;
+    position: fixed;
+    bottom: 0;
+    padding-top: 200px;
+}
+#vertical1{
+    position: fixed;
+    background-color: blue;
+    z-index: 99999;
+}
+#vertical{
+    position: absolute;
+    bottom: 0;
+    top: 70px;
+    z-index: 999;
+}
+#container{
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top:200;
+    width: 400%;
+    height: 100vh;
+    display: flex;
+    height: 8000px;
+}
+#espaço1{
+  margin-left: 600px;
+}
+.section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 65px;
+}
+.content{
+    margin-bottom: 400px;
+}
+.text{
+    padding: 40px;
+}
+img, video{
+    width: 100%;
+    height: 100%;
+}
+
+
+:target{
+  scroll-margin-top: 60px ;
+}
+
+
+
+
+
+
+#videoprinc{
+  width: 100%;
+  margin-top: 0%;
+}
+.logotopo {
+  float: left;
+  top: 0;
+  left: 0;
+  margin: 5px 5px 5px 5px;
+  height: 50px;
+  width: 150px;
+  position: absolute;
+}
+
+#menu {
+  display: flex !important;
+  position: fixed;
+  top:0;
+  z-index: 999;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.men {
+  margin: 5px;
+  color: white;
+  padding:15px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.nav {
+  font-size: 18px;
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to left, white, #69BBFF, #465FE0, white);
+}
+
+
+
+
+
+
+.textoprincipal {
+  background-color: black;
+}
+
+#textointro {
+  margin: auto;
+  padding: 40px;
+  margin: -25px 40px 40px 40px ;
+  text-align: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to left, white, #69BBFF, #465FE0, white);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+}
+
+#textintro > h6 {
+  line-height: 1.1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.projeto {
+  background-color: white;
+  border-radius: 10px;
+  margin: 0px 5px 10px 5px;
+}
+.proj{
+  text-align: center;
+  transform: translateY(130%);
+  font-size: 30px;
+  letter-spacing: 10px;
+  border-radius: 10px;
+
+}
+
+.proj>h1{
+  padding:0px 40px 40px 30px;
+  animation: projeto 3s infinite linear;
+}
+
+
+@keyframes projeto {
+  0%{
+    transform: translateX(0px);
+    color: rgb(176, 213, 255);
+  }
+  33%{
+    transform: translateX(60px);
+    color: rgb(76, 159, 231);
+  }
+  66%{
+    transform: translateY(80px);
+    color: rgb(96, 169, 242);
+  }
+  100%{
+    transform: translateX(0px);
+    color: rgb(135, 203, 249);
+  }
+}
+.linguagens {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.itens {
+  background-color: black;
+  padding: 5px;
+  color: white;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.imagemqrcode {
+  display: none;
+  height: 150px;
+  width: 150px;
+  margin: 25px;
+}
+
+.qrcode {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+  width: 70px;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+}
+
+.tituloproj {
+  font-size: 30px;
+  padding: 5px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to left, #000000, black);
+}
+
+
+
+
+
+
+
+
+.text {
+  vertical-align: middle;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+}
+
+.text > h1 {
+  padding: 10px;
+}
+
+.text > p {
+  padding: 8px;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+#partetras {
+  vertical-align: middle;
+  color: white;
+}
+
+.img {
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.imagem {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+#sobre {
+  margin: auto;
+  padding: 40px;
+}
+
+
+.t1 {
+  color: #92ceff;
+  text-align: center;
+}
+
+.t2 {
+  text-align: center;
+}
+
+.t3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.t4 {
+  font-style: oblique;
+  text-align: center;
+}
+
+
+
+
+
+
+.areas {
+  color: white;
+}
+.carreira{
+  padding: 10px;
+}
+.ultimasessão{
+  background-color: black;
+  margin-top: 40px;
+  padding: 40px;
+  transition: width 6s;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+.citação {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to left, white, #69BBFF, #465FE0, white);
+  padding: 20px;
+  margin: 50px;
+}
+
+.cita {
+  background-color: black;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+#formulário {
+  text-align: center;
+  margin-top: 200px;
+}
+
+#form {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+
+
+
+
+
+
+
+.logo{
+  height: 70px;
+  width: 200px;
+}
+
+
+
+
+button {
+  padding: 10px 20px 10px 20px;
+  color: white;
+  background-color: rgba(250, 250, 250, 0.3058823529);
+}
+
+button:hover {
+  background-color: black;
+}
+
+
+
+
+#footer {
+  margin: auto;
+
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.icons {
+  display: inline-flex;
+  display-text-align: center;
+  display-left: 50%;
+}
+
+svg {
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+svg:hover {
+  color: black;
+  cursor: pointer;
+}
+
+p > a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(188, 215, 245, 0.3490196078);
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+p > a:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+#parte{
+  z-index: 9999;
+  background-color: black;
+  height: 1805px;
+}
+@media (max-width: 1400px) {
+  #parte{
+    height: 1850px;
+    background-color: #000000;
+
+  }
+}
+@media (max-width: 1300px) {
+  #parte{
+    height: 2200px;
+    background-color: #000000;
+
+  }
+  #espaço1{
+    margin-left: 300px;
+  }
+}
+@media (max-width: 900px) {
+  #parte{
+    height: 2560px;
+    background-color: #000000;
+  }
+  #espaço1{
+    margin-left: 300px;
+  }
+}
+@media (max-width: 808px) {
+  .nav {
+    font-size: 16px;
+
+  }
+  #parte{
+    height: 2685px;
+    background-color: #000000;
+  }
+
+}
+@media (max-width: 580px) {
+  #parte{
+    height: 2705px;
+    background-color: #000000;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */

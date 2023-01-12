@@ -4,203 +4,333 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Michaela Galbiati</title>
+    <link rel="stylesheet" href="style.css">
     <script src="jquery-3.6.3.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 <style>
-    body{
-        margin: 0;
-        padding: 0;
-        height: 8000px;
-        width: 100%;
-        overflow-x: hidden;
-    }
-    #amarelo{
-        background-color: yellow;
-        position: fixed;
-        bottom: 0;
-        padding-top: 200px;
-    }
-    #vertical1{
-        position: fixed;
-        background-color: blue;
-        z-index: 9999;
-    }
-    #vertical{
-        position: absolute;
-        bottom: 0;
-        top: 70px;
-        z-index: 999;
-    }
-    #container{
-        z-index: 999;
-        position: fixed;
-        left: 0;
-        width: 400%;
-        height: 100vh;
-        display: flex;
-    }
-    .section{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        padding-top:-100px
-    }
-    .content{
-        margin-bottom: 400px;
-    }
-    .text{
-        padding: 40px;
-    }
-    img, video{
-        width: 100%;
-        height: 100%;
-    }
 
 </style>
 <body>
     <div id="vertical1">
-        <p>Lorem ipsum dolor sit amet c!</p>
+           <div class="logomg">
+            <img  class="logotopo" src="bitmapcolorido.png" alt="">
+           </div>
+        <div id="menu">
+            <div class="men">
+                <h2 class="nav"><a href="#textointro">Studio</a></h2>
+            </div>
+            <div class="men">
+                <h2 class="nav" ><a href="#sobre">About</a></h2>
+            </div>
+            <div class="men">
+                <h2 class="nav"><a href="#project">Projects</a></h2>
+            </div>
+        </div>
     </div>
-    <div id="container" style="height: 8000px;">
+    <div id="container" >
+        <div class="section" id="espaço1">
+            <div class="content">
+                <div class="text">
+
+                </div>
+            </div>
+        </div>
         <div class="section" style="width: 5500px;">
             <div class="content">
                 <div class="text">
-                    <h1>Parte 0</h1>
-
+                </div>
+            </div>
+        </div>
+        <div class="section" style="width: 5500px;">
+            <div class="content">
+                <div class="text">
+                    <div class="proj">
+                        <h1>Projetos</h1>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="section">
             <div class="content">
                 <div class="text">
-                    <h1>Parte 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe atque voluptatum cumque, optio officiis aperiam eos ratione possimus facere consequatur praesentium repudiandae! Fugiat tenetur veniam nesciunt numquam aperiam sequi?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat alias aut consequuntur. Quasi a quam suscipit nesciunt sequi, fugiat, magnam ipsam praesentium in sed possimus facere dicta temporibus, nobis nisi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis natus officiis asperiores, cupiditate, vitae voluptatum veniam eius voluptatem fuga reiciendis. Non repellendus repellat eligendi ducimus hic blanditiis dolore ex?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, nisi inventore? Quod rerum accusamus exercitationem voluptatum eos sed consectetur ut nesciunt praesentium? Quo, ipsa! Asperiores modi a dolorum commodi doloremque.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero accusantium voluptas nobis qui odit, provident, distinctio tempore adipisci repellendus voluptate, vitae enim non ut quasi debitis. Ipsum, aliquid totam.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero magni iure delectus nobis numquam? Unde repellat fuga aliquam suscipit eligendi dolore, veniam optio at minus minima esse itaque sed recusandae?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam, blanditiis dolor impedit porro velit soluta iste recusandae at facilis odio reiciendis accusantium culpa quo, exercitationem suscipit dolore inventore iusto!
+                    <div class="projeto">
+                        <h2 class="tituloproj" style="text-align: center;"><a href="https://micro-arome.vercel.app/">Microarome</a></h2>
+                       <div class="linguagens">
+                        <p class="itens">Jquery</p>
+                        <p class="itens">Sass</p>
+                        <p class="itens">Bootstrap</p>
+                    </div>
+                        <div>
+                            <video id="microaromevideo" loop muted autoplay style="height: 500px; width: 400px;"  src="micrarome.mp4" alt="">
 
-                    </p>
+                        </div>
+                        <div style="margin-left: 25%;">
+                            <img id="microaromeqrcode" class="imagemqrcode" src="microaromeqrcode.png" alt="qrcode">
+                        </div>
+                        <p onclick="$('#microaromeqrcode').slideToggle()" class="qrcode"> QRcode</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="section">
             <div class="content">
                 <div class="text">
-                    <h1>Parte 2</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe atque voluptatum cumque, optio officiis aperiam eos ratione possimus facere consequatur praesentium repudiandae! Fugiat tenetur veniam nesciunt numquam aperiam sequi?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat alias aut consequuntur. Quasi a quam suscipit nesciunt sequi, fugiat, magnam ipsam praesentium in sed possimus facere dicta temporibus, nobis nisi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis natus officiis asperiores, cupiditate, vitae voluptatum veniam eius voluptatem fuga reiciendis. Non repellendus repellat eligendi ducimus hic blanditiis dolore ex?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, nisi inventore? Quod rerum accusamus exercitationem voluptatum eos sed consectetur ut nesciunt praesentium? Quo, ipsa! Asperiores modi a dolorum commodi doloremque.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero accusantium voluptas nobis qui odit, provident, distinctio tempore adipisci repellendus voluptate, vitae enim non ut quasi debitis. Ipsum, aliquid totam.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero magni iure delectus nobis numquam? Unde repellat fuga aliquam suscipit eligendi dolore, veniam optio at minus minima esse itaque sed recusandae?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam, blanditiis dolor impedit porro velit soluta iste recusandae at facilis odio reiciendis accusantium culpa quo, exercitationem suscipit dolore inventore iusto!
-
-                    </p>
+                    <div class="projeto">
+                        <h2 class="tituloproj" style="text-align: center;"><a href="https://micro-blog-phi.vercel.app/">Microblog</a></h2>
+                        <div class="linguagens">
+                         <p class="itens">Jquery</p>
+                         <p class="itens">Sass</p>
+                         <p class="itens">Bootstrap</p>
+                    </div>
+                        <div>
+                            <video loop muted autoplay style="height: 500px; width: 400px;" src="microblog1.mp4" alt="">
+                        </div>
+                        <div style="margin-left: 25%;">
+                            <img id="microblogqrcode" class="imagemqrcode" src="microblogqrcode.png" alt="qrcode">
+                        </div>
+                         <p onclick="$('#microblogqrcode').slideToggle()" class="qrcode" >QRcode</p>
+                     </div>
                 </div>
             </div>
         </div>
         <div class="section">
             <div class="content">
                 <div class="text">
-                    <h1>Parte 3</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe atque voluptatum cumque, optio officiis aperiam eos ratione possimus facere consequatur praesentium repudiandae! Fugiat tenetur veniam nesciunt numquam aperiam sequi?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat alias aut consequuntur. Quasi a quam suscipit nesciunt sequi, fugiat, magnam ipsam praesentium in sed possimus facere dicta temporibus, nobis nisi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis natus officiis asperiores, cupiditate, vitae voluptatum veniam eius voluptatem fuga reiciendis. Non repellendus repellat eligendi ducimus hic blanditiis dolore ex?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, nisi inventore? Quod rerum accusamus exercitationem voluptatum eos sed consectetur ut nesciunt praesentium? Quo, ipsa! Asperiores modi a dolorum commodi doloremque.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero accusantium voluptas nobis qui odit, provident, distinctio tempore adipisci repellendus voluptate, vitae enim non ut quasi debitis. Ipsum, aliquid totam.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero magni iure delectus nobis numquam? Unde repellat fuga aliquam suscipit eligendi dolore, veniam optio at minus minima esse itaque sed recusandae?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam, blanditiis dolor impedit porro velit soluta iste recusandae at facilis odio reiciendis accusantium culpa quo, exercitationem suscipit dolore inventore iusto!
-
-                    </p>
+                    <div class="projeto">
+                        <h2 class="tituloproj" style="text-align: center;"><a href="https://mkgotrip.vercel.app/">MK GO! Trip</a></h2>
+                        <div class="linguagens">
+                         <p class="itens">Jquery</p>
+                         <p class="itens">Sass</p>
+                         <p class="itens">Bootstrap</p>
+                        </div>
+                        <div>
+                            <video loop muted autoplay style="height: 500px; width: 400px;" src="mkgotrip.mp4" alt="">
+                        </div>
+                        <div style="margin-left: 25%;">
+                            <img id="mkgotripqrcode" class="imagemqrcode" src="mkgotripqrcode.png" alt="qrcode">
+                        </div>
+                         <p onclick="$('#mkgotripqrcode').slideToggle()" class="qrcode">QRcode</p>
+                     </div>
                 </div>
             </div>
         </div>
         <div class="section">
             <div class="content">
                 <div class="text">
-                    <h1>Parte 4</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe atque voluptatum cumque, optio officiis aperiam eos ratione possimus facere consequatur praesentium repudiandae! Fugiat tenetur veniam nesciunt numquam aperiam sequi?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat alias aut consequuntur. Quasi a quam suscipit nesciunt sequi, fugiat, magnam ipsam praesentium in sed possimus facere dicta temporibus, nobis nisi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis natus officiis asperiores, cupiditate, vitae voluptatum veniam eius voluptatem fuga reiciendis. Non repellendus repellat eligendi ducimus hic blanditiis dolore ex?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, nisi inventore? Quod rerum accusamus exercitationem voluptatum eos sed consectetur ut nesciunt praesentium? Quo, ipsa! Asperiores modi a dolorum commodi doloremque.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero accusantium voluptas nobis qui odit, provident, distinctio tempore adipisci repellendus voluptate, vitae enim non ut quasi debitis. Ipsum, aliquid totam.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero magni iure delectus nobis numquam? Unde repellat fuga aliquam suscipit eligendi dolore, veniam optio at minus minima esse itaque sed recusandae?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam, blanditiis dolor impedit porro velit soluta iste recusandae at facilis odio reiciendis accusantium culpa quo, exercitationem suscipit dolore inventore iusto!
-
-                    </p>
+                    <div class="projeto">
+                        <h2 class="tituloproj" style="text-align: center;"><a href="https://mg-dimensional-tech-bfavyfels-michaela-galbiati.vercel.app/">MG Dimensional tech</a></h2>
+                        <div class="linguagens">
+                         <p class="itens">Jquery</p>
+                         <p class="itens">Sass</p>
+                         <p class="itens">Bootstrap</p>
+                        </div>
+                        <div>
+                            <video loop muted autoplay style="height: 500px; width: 400px;" src="mgdimensionaltech.mp4" alt="">
+                        </div>
+                        <div style="margin-left: 25%;">
+                            <img id="microblogqrcode" class="imagemqrcode" src="MGTECH.png" alt="qrcode">
+                        </div>
+                         <p onclick="$('#microblogqrcode').slideToggle()" class="qrcode" >QRcode</p>
+                     </div>
                 </div>
             </div>
         </div>
         <div class="section">
             <div class="content">
                 <div class="text">
-                    <h1>Parte 5</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe atque voluptatum cumque, optio officiis aperiam eos ratione possimus facere consequatur praesentium repudiandae! Fugiat tenetur veniam nesciunt numquam aperiam sequi?
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat alias aut consequuntur. Quasi a quam suscipit nesciunt sequi, fugiat, magnam ipsam praesentium in sed possimus facere dicta temporibus, nobis nisi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis natus officiis asperiores, cupiditate, vitae voluptatum veniam eius voluptatem fuga reiciendis. Non repellendus repellat eligendi ducimus hic blanditiis dolore ex?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, nisi inventore? Quod rerum accusamus exercitationem voluptatum eos sed consectetur ut nesciunt praesentium? Quo, ipsa! Asperiores modi a dolorum commodi doloremque.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero accusantium voluptas nobis qui odit, provident, distinctio tempore adipisci repellendus voluptate, vitae enim non ut quasi debitis. Ipsum, aliquid totam.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero magni iure delectus nobis numquam? Unde repellat fuga aliquam suscipit eligendi dolore, veniam optio at minus minima esse itaque sed recusandae?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam, blanditiis dolor impedit porro velit soluta iste recusandae at facilis odio reiciendis accusantium culpa quo, exercitationem suscipit dolore inventore iusto!
+                    <div class="projeto">
+                        <h2 class="tituloproj" style="text-align: center;">MK Store</h2>
+                        <div class="linguagens">
+                         <p class="itens">Vue</p>
+                         <p class="itens">Sass</p>
+                         <p class="itens">Bootstrap</p>
+                        </div>
+                        <div>
+                            <video loop muted autoplay style="height: 500px; width: 400px;" src="" alt="">
+                        </div>
+                        <div style="margin-left: 25%;">
+                            <img id="microblogqrcode" class="imagemqrcode" src="" alt="qrcode">
+                        </div>
+                         <p onclick="$('#microblogqrcode').slideToggle()" class="qrcode" >QRcode</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <div class="text">
+                    <div class="projeto">
+                        <h2 class="tituloproj" style="text-align: center;">Infinity Conection</h2>
+                        <div class="linguagens">
+                         <p class="itens">Angular</p>
+                         <p class="itens">Sass</p>
+                         <p class="itens">Typescript</p>
+                        </div>
+                        <div>
+                            <video loop muted autoplay style="height: 500px; width: 400px;" src="" alt="">
+                        </div>
+                        <div style="margin-left: 25%;">
+                            <img id="microblogqrcode" class="imagemqrcode" src="" alt="qrcode">
+                        </div>
+                         <p onclick="$('#microblogqrcode').slideToggle()" class="qrcode" >QRcode</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <div class="text">
+                    <div class="projeto">
+                        <h2 class="tituloproj" style="text-align: center;">Card MK</h2>
+                        <div class="linguagens">
+                         <p class="itens">React</p>
+                         <p class="itens">Typescript</p>
+                         <p class="itens">Sass</p>
+                        </div>
+                        <div>
+                            <video loop muted autoplay style="height: 500px; width: 400px;" src="" alt="">
+                        </div>
+                        <div style="margin-left: 25%;">
+                            <img id="microblogqrcode" class="imagemqrcode" src="" alt="qrcode">
+                        </div>
+                         <p onclick="$('#microblogqrcode').slideToggle()" class="qrcode" >QRcode</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="width: 5500px;">
+            <div class="content">
+                <div class="text">
+                    <h1></h1>
 
-                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section"  id="espaço2" >
+            <div class="content">
+                <div class="text">
+                    <h1></h1>
+
                 </div>
             </div>
         </div>
     </div>
-    <div id="vertical" style="background-color: pink; z-index: 999;">
+    <div id="vertical" style="z-index: 999;">
         <div style="width: 100%;">
             <video style="text-align: center; width:100%;" autoplay muted loop src="GM.mp4"></video>
         </div>
-        <p style="background-color: pink;"> AAAAAAAAAA Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quasi dolores placeat cupiditate officiis eveniet qui cum quae illo. Consequatur delectus aliquid ea, reiciendis odio vitae quae molestias ipsum dolores!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quod alias expedita autem maxime beatae quis ipsa sapiente obcaecati officiis sed odit, cupiditate at esse quas dicta cumque id rem.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nulla repellendus numquam doloribus, dignissimos unde dolore sequi sunt pariatur iusto! Est officia corrupti exercitationem mollitia in minima cum commodi culpa.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quos iste obcaecati molestiae veritatis rem soluta, saepe accusantium vero suscipit id asperiores beatae facilis et laboriosam rerum sunt qui natus.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, necessitatibus rem. Rerum cumque et esse dolores totam sint in voluptatibus dolore culpa delectus maxime ab consequuntur, iure laboriosam. Non, cupiditate.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi delectus corrupti hic officia non deserunt temporibus perferendis ea, a totam ipsam. Ratione dignissimos necessitatibus magnam saepe maxime debitis eius error?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia itaque ea at doloremque dolores. Quos, laudantium voluptatem voluptates, excepturi ex odio voluptatum doloremque eum vel reiciendis assumenda ullam! Inventore, accusamus?
+        <p style="background-color: pink;">
+            <div class="textoprincipal">
+                <div id="textointro">
+                    <h3 style="padding: 15px;"><i>"O futuro dependerá daquilo que fazemos no presente."</i> - Mahatma Gandhi</h3>
+                    <h5 style="font-size: 16px;">Estamos em contante evolução, buscando o impossível, através do que acreditamos ser possivel, essa é a verdadeira arte da tecnologia!</h5>
+                </div>
+            </div>
     </p>
+    <div id="project"></div>
 </div>
-<div id="amarelo" >
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et hic, iusto quos quo tempora labore voluptatibus nisi nihil numquam voluptate ab velit, magni recusandae odit? Animi vitae iure excepturi quia.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. In perferendis eum laborum veritatis labore odio illo impedit, assumenda natus aut, molestias sint ad provident? Ex nulla inventore consequatur odio ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet nisi ullam voluptatem libero aliquid officia neque similique accusamus. Velit id ratione corporis omnis consequuntur iusto impedit modi, sint nemo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi at, mollitia alias nulla iste excepturi non aperiam fuga est repellat rem enim odit temporibus consequuntur maxime aspernatur exercitationem voluptatum officiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro earum optio, doloremque, mollitia officia dicta cum aspernatur blanditiis dolore consequuntur vero laudantium sint. Tempora dignissimos in pariatur aspernatur modi vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae saepe accusamus deleniti iusto voluptatum enim ullam, esse quos amet consequuntur error, incidunt vero molestiae sit consequatur modi. Totam, expedita quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus consectetur facere iure tempora? Dicta suscipit dolores fugiat ipsum voluptatem nihil neque cumque. Molestias ipsa quibusdam cupiditate omnis perspiciatis facere.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere libero modi, eos repudiandae dolor architecto laboriosam eum amet saepe nostrum deleniti! Culpa voluptatem harum architecto illo nihil placeat vitae quasi?  Lorem ipsum dolor sit amet consectetur adipisicing elit. At ducimus omnis quae explicabo obcaecati, dicta ratione ipsum iste dolorum, adipisci, doloribus nisi soluta laboriosam ipsa enim sint modi numquam non!
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam delectus quaerat maiores rerum quae. Suscipit nobis maxime vel earum velit cupiditate deserunt, sint rerum magni quis numquam iure vitae natus!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi provident, culpa laborum nostrum quod atque illo nihil qui blanditiis earum omnis enim vero perferendis, ab deleniti iste numquam asperiores esse.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat est minus animi quas aut vel atque voluptatem, similique rem vero consectetur minima asperiores nulla at veritatis unde amet labore.
-</div>
-    <div class="section">
+    <div class="section" style="background-color: #00155C; margin-top:10px">
         <div class="content">
             <div class="text">
-                <h1>Parte 44</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe atque voluptatum cumque, optio officiis aperiam eos ratione possimus facere consequatur praesentium repudiandae! Fugiat tenetur veniam nesciunt numquam aperiam sequi?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat alias aut consequuntur. Quasi a quam suscipit nesciunt sequi, fugiat, magnam ipsam praesentium in sed possimus facere dicta temporibus, nobis nisi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis natus officiis asperiores, cupiditate, vitae voluptatum veniam eius voluptatem fuga reiciendis. Non repellendus repellat eligendi ducimus hic blanditiis dolore ex?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, nisi inventore? Quod rerum accusamus exercitationem voluptatum eos sed consectetur ut nesciunt praesentium? Quo, ipsa! Asperiores modi a dolorum commodi doloremque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero accusantium voluptas nobis qui odit, provident, distinctio tempore adipisci repellendus voluptate, vitae enim non ut quasi debitis. Ipsum, aliquid totam.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero magni iure delectus nobis numquam? Unde repellat fuga aliquam suscipit eligendi dolore, veniam optio at minus minima esse itaque sed recusandae?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam, blanditiis dolor impedit porro velit soluta iste recusandae at facilis odio reiciendis accusantium culpa quo, exercitationem suscipit dolore inventore iusto!
 
-                </p>
             </div>
         </div>
     </div>
-    <div class="section" style="z-index: 9999; background-color: brown; height: 1000px;">
+    <div class="section" id="parte">
         <div class="content">
             <div class="text">
-                <h1>Parte 5</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe atque voluptatum cumque, optio officiis aperiam eos ratione possimus facere consequatur praesentium repudiandae! Fugiat tenetur veniam nesciunt numquam aperiam sequi?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat alias aut consequuntur. Quasi a quam suscipit nesciunt sequi, fugiat, magnam ipsam praesentium in sed possimus facere dicta temporibus, nobis nisi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis natus officiis asperiores, cupiditate, vitae voluptatum veniam eius voluptatem fuga reiciendis. Non repellendus repellat eligendi ducimus hic blanditiis dolore ex?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, nisi inventore? Quod rerum accusamus exercitationem voluptatum eos sed consectetur ut nesciunt praesentium? Quo, ipsa! Asperiores modi a dolorum commodi doloremque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero accusantium voluptas nobis qui odit, provident, distinctio tempore adipisci repellendus voluptate, vitae enim non ut quasi debitis. Ipsum, aliquid totam.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero magni iure delectus nobis numquam? Unde repellat fuga aliquam suscipit eligendi dolore, veniam optio at minus minima esse itaque sed recusandae?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam, blanditiis dolor impedit porro velit soluta iste recusandae at facilis odio reiciendis accusantium culpa quo, exercitationem suscipit dolore inventore iusto!
-                </p>
+                <div id="sobre">
+                    <div class="bio">
+                        <div class="img">
+                                <img class="imagem" src="IMG_20221108_155639_004.jpg" alt="">
+                        </div>
+                       <div id="partetras">
+                        <h1 style="margin: 20px;"><b>Oi! Eu sou Michaela Galbiati.</b></h1>
+                        <h5 style="margin: 20px;">Full-Stack developer | UI/UX designer</h5>
+                        <p>Minha formação em desenvovimento de sistemas consegui reunir a criatividade que esbanjo com o raciocínio lógico que eu tanto buscava. O desenvolvimento web - e a web designer - me permitiram por em prática o que sempre busquei criar. E assim, me aperfeiço todos os dias, buscando estar atualizada e pronta para entregar não só o que o mercado tecnológico necessita, mas também, criando meu próprio estilo de desenvolvimento. Afinal, autenticidade e o desejo que quebrar barreiras são que dão vida ao mundo da tecnologias! </p>
+                        <q><i>Inovação distingue um líder de um seguidor.</i></q>
+                        <br></i><q><i>A única maneira de fazer algo excelente é amar o que você faz. Se você ainda não a encontrou, continue procurando. Não se acomode.</i>
+                        </q>
+                        <h6>Steve Jobs</h6>
+                       </div>
+                    </div>
+                </div>
+              </div>
+              <div>
+                <main>
+                  <section class="ultimasessão" id="sessãoprinc" >
+                    <div class="areas">
+                        <div class="carreira" id="a2">
+                            <h3 class="t1">Front-end</h3>
+                            <p class="t2">Criando, desenvolvendo e dando vida a conteúdos na Web e mobile</p>
+                            <h6 class="t3">Desenvolvendo em:</h6>
+                            <p class="t4">HTML, CSS, SASS, JAVASCRIPT, TYPESCRIPT, VUE, ANGULAR, REACT, BOOTSTRAP, JQUERY</p>
+                        </div>
+                       </div>
+                  </section>
+                  <section class="ultimasessão" >
+                    <div class="areas" id="a3" >
+                        <div class="carreira">
+                            <h3 style="position: relative;" class="t1">Back-end</h3>
+                        <p style="position: relative;"   class="t2">Modelando dados, seguindo os padrões de arquitetura, banco de dados além de aplicar e compreender o paradigma cliente-servidor </p>
+                        <h6 style="position: relative;"  class="t3">Desenvolvendo em:</h6>
+                        <p style="position: relative;"  class="t4">PHP, MYSQL, JAVA, PYTHON, RUBY, FIREBASE</p>
+                        </div>
+                    </div>
+                  </section>
+                  <section class="ultimasessão">
+                    <div class="areas">
+                       <div class="carreira" id="a1">
+                        <h3 class="t1">Designer gráfico</h3>
+                        <p class="t2">Eternizando conteúdo, valorizando cada estrutura, utilizando padrões de design limpos e pontuais, além de interações inteligentes. </p>
+                        <h6 class="t3">Desenhando e desenvolvendo:</h6>
+                        <p class="t4">UX, interface do usuário, Web, apps, logotipos</p>
+                       </div>
+                       </div>
+                  </section>
+                </main>
+              </div>
+              <div class="vertical-section">
+                <div id="formulário" >
+                    <div>
+                        <h2 style="text-align: center; color: white;margin-bottom: 60px; font-size: 30px;">Let`s work together!</h2>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input id="form" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label style="text-align: center;" for="floatingInput">Email address</label>
+                      </div>
+                      <button style="margin-bottom: 150px; border-radius: 10px; border:none; ">Enviar</button>
+                </div>
+                </div>
+                <div id="footer">
+                    <p><a href="http://">mkgalbi@gmail.com</a></p>
+                    <div class="icons">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                          </svg></p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg></p>
+                    </div>
+                <div style="margin-bottom: 45px;">
+                    <h6 style="color:white; font-size: 16px;">&copy Michaela Galbiati</h6>
+                    <img style="margin-left: 115px;" class="logo" src="logoresolução.png" alt="">
+                    <div style=" right: 0; position: absolute; border: 2px solid white;">
+                        <a href="#topo"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                          </svg></a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+
             </div>
         </div>
     </div>
@@ -216,9 +346,8 @@
         dw = $(document).width(),
         ww=$(window).width(),
         value1 = (scroll / (dw-ww)) * 100;
-    $('#container').css('left', -value *3 + '%')
-
-        })
+    $('#container').css('left', -value *8 + '%')
+    })
 </script>
 
 
