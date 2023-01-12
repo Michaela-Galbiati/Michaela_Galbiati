@@ -13,10 +13,10 @@
 <style>
 
 </style>
-<body>
+<body style="background-color: #17083F;">
     <div id="vertical1">
            <div class="logomg">
-            <img  class="logotopo" src="bitmapcolorido.png" alt="">
+            <img  class="logotopo" src="logotop.png" alt="">
            </div>
         <div id="menu">
             <div class="men">
@@ -28,6 +28,16 @@
             <div class="men">
                 <h2 class="nav"><a href="#project">Projects</a></h2>
             </div>
+        </div>
+        <div id="mudacor" style="position: fixed; right: 10px; background-color: white; width: 45px;
+        height: 25px; border-radius: 30px; cursor: pointer;">
+            <div style="display: flex">
+                <img style=" width: 25px;margin-left:20px"  src="sol.png" alt="">
+            </div>
+        </div>
+        <div id="mudacor1" style="display:none;position: fixed; right: 10px; background-color: white; width: 45px;
+        height: 25px; border-radius: 30px; cursor: pointer;">
+            <img style="width: 25px; " src="lua-crescente.png" alt="">
         </div>
     </div>
     <div id="container" >
@@ -67,10 +77,11 @@
                             <video id="microaromevideo" loop muted autoplay style="height: 500px; width: 400px;"  src="micrarome.mp4" alt="">
 
                         </div>
-                        <div style="margin-left: 25%;">
+                        <div>
                             <img id="microaromeqrcode" class="imagemqrcode" src="microaromeqrcode.png" alt="qrcode">
                         </div>
-                        <p onclick="$('#microaromeqrcode').slideToggle()" class="qrcode"> QRcode</p>
+                        <p onclick="$('#microaromeqrcode').toggle(2)
+                        $('#microaromevideo').toggle(2)" class="qrcode"> QRcode</p>
                     </div>
                 </div>
             </div>
@@ -86,12 +97,13 @@
                          <p class="itens">Bootstrap</p>
                     </div>
                         <div>
-                            <video loop muted autoplay style="height: 500px; width: 400px;" src="microblog1.mp4" alt="">
+                            <video id="microblog" loop muted autoplay style="height: 500px; width: 400px;" src="microblog1.mp4" alt="">
                         </div>
-                        <div style="margin-left: 25%;">
+                        <div>
                             <img id="microblogqrcode" class="imagemqrcode" src="microblogqrcode.png" alt="qrcode">
                         </div>
-                         <p onclick="$('#microblogqrcode').slideToggle()" class="qrcode" >QRcode</p>
+                         <p onclick="$('#microblogqrcode').toggle(2)
+                         $('#microblog').toggle(2)" class="qrcode" >QRcode</p>
                      </div>
                 </div>
             </div>
@@ -107,12 +119,13 @@
                          <p class="itens">Bootstrap</p>
                         </div>
                         <div>
-                            <video loop muted autoplay style="height: 500px; width: 400px;" src="mkgotrip.mp4" alt="">
+                            <video id="mkgo" loop muted autoplay style="height: 500px; width: 400px;" src="mkgotrip.mp4" alt="">
                         </div>
-                        <div style="margin-left: 25%;">
+                        <div>
                             <img id="mkgotripqrcode" class="imagemqrcode" src="mkgotripqrcode.png" alt="qrcode">
                         </div>
-                         <p onclick="$('#mkgotripqrcode').slideToggle()" class="qrcode">QRcode</p>
+                         <p onclick="$('#mkgotripqrcode').toggle()
+                         $('#mkgo').toggle(2)" class="qrcode">QRcode</p>
                      </div>
                 </div>
             </div>
@@ -128,12 +141,13 @@
                          <p class="itens">Bootstrap</p>
                         </div>
                         <div>
-                            <video loop muted autoplay style="height: 500px; width: 400px;" src="mgdimensionaltech.mp4" alt="">
+                            <video id="mktech" loop muted autoplay style="height: 500px; width: 400px;" src="mgdimensionaltech.mp4" alt="">
                         </div>
-                        <div style="margin-left: 25%;">
-                            <img id="microblogqrcode" class="imagemqrcode" src="MGTECH.png" alt="qrcode">
+                        <div>
+                            <img id="mktechqrcode" class="imagemqrcode" src="MGTECH.png" alt="qrcode">
                         </div>
-                         <p onclick="$('#microblogqrcode').slideToggle()" class="qrcode" >QRcode</p>
+                         <p onclick="$('#mktechqrcode').toggle()
+                         $('#mktech').toggle(2)" class="qrcode" >QRcode</p>
                      </div>
                 </div>
             </div>
@@ -219,10 +233,10 @@
         </div>
     </div>
     <div id="vertical" style="z-index: 999;">
-        <div style="width: 100%;">
-            <video style="text-align: center; width:100%;" autoplay muted loop src="GM.mp4"></video>
+        <div style="width: 100%;" id="topo">
+            <video class="video" style="text-align: center; width:100%;" autoplay muted loop src="GM.mp4"></video>
         </div>
-        <p style="background-color: pink;">
+        <p>
             <div class="textoprincipal">
                 <div id="textointro">
                     <h3 style="padding: 15px;"><i>"O futuro dependerá daquilo que fazemos no presente."</i> - Mahatma Gandhi</h3>
@@ -232,7 +246,7 @@
     </p>
     <div id="project"></div>
 </div>
-    <div class="section" style="background-color: #00155C; margin-top:10px">
+    <div id="parte2" class="section" style="background-color:#4a7cc7; margin-top:10px">
         <div class="content">
             <div class="text">
 
@@ -293,6 +307,9 @@
                   </section>
                 </main>
               </div>
+              <div class="cita">
+                <h4 class="citação" style="text-align: center;"><i>"Os olhos são as janelas para a alma."</i> <BR></BR> - Edgar A. P.</h4>
+            </div>
               <div class="vertical-section">
                 <div id="formulário" >
                     <div>
@@ -346,8 +363,73 @@
         dw = $(document).width(),
         ww=$(window).width(),
         value1 = (scroll / (dw-ww)) * 100;
-    $('#container').css('left', -value *8 + '%')
+        if($(window).width()>650){
+    $('#container').css('left', -value *4 + '%')
+
+        }else{
+    $('#container').css('left', -value *9 + '%')
+
+        }
     })
+    $(
+        function(){
+            $('#mudacor').click(
+                function(){
+                    $('body').css('background-color', '#a26605');
+                    $('#mudacor').css('display', 'none')
+                    $('#mudacor1').css('display', 'block')
+                    $('.men').css('background-color', '#944500');
+                    $('.nav').css('background-clip', ' text')
+                    $('.nav').css('-webkit-background-clip', 'text')
+                    $('.nav').css('background-image', 'linear-gradient(to right, white, #F5C905,#F58601,#FA3900, white)')
+                    $('.nav').css('-webkit-text-fill-color',' transparent')
+                    $('.textoprincipal').css('background-color', '#a26605')
+                    $('#textointro').css('background-clip', ' text')
+                    $('#textointro').css('-webkit-background-clip', 'text')
+                    $('#textointro').css('background-image', 'linear-gradient(to right, white, #F5C905,#F58601, white)')
+                    $('#textointro').css('-webkit-text-fill-color',' transparent')
+                    $('.cita').css('background-color', '#944500');
+                    $('.citação').css('background-clip', ' text')
+                    $('.citação').css('-webkit-background-clip', 'text')
+                    $('.citação').css('background-image', 'linear-gradient(to right, white, #F5C905,#F58601, white)')
+                    $('.citação').css('-webkit-text-fill-color',' transparent')
+                    $('.ultimasessão').css('background-color', '#944500')
+                    $('#parte').css('background-color', '#a26605')
+                    $('#parte2').css('background-color', '#d5a403')
+                    $('.t1').css('color', '#EBA001')
+                    $('.video').attr('src', 'GMcolor.mp4')
+                })
+
+        }
+    )
+    $(
+        function(){
+            $('#mudacor1').click(
+                function(){
+                    $('#mudacor1').css('display', 'none')
+                    $('#mudacor').css('display', 'block')
+                    $('body').css('background-color', '#17083F');
+                    $('.men').css('background-color', 'black');
+                    $('.nav').css('background-clip', ' text')
+                    $('.nav').css('-webkit-background-clip', 'text')
+                    $('.nav').css('background-image', 'linear-gradient(to left, white, #69BBFF, #465FE0, white)')
+                    $('.nav').css('-webkit-text-fill-color',' transparent')
+                    $('.textoprincipal').css('background-color', '#17083F')
+                    $('#textointro').css('background-clip', ' text')
+                    $('#textointro').css('-webkit-background-clip', 'text')
+                    $('#textointro').css('background-image', ' linear-gradient(to left, rgb(0, 142, 207), #3696e4,#9ecdf3,  rgb(0, 142, 207))')
+                    $('#textointro').css('-webkit-text-fill-color',' transparent')
+                    $('.cita').css('background-color', 'black');
+                    $('.citação').css('background-clip', ' text')
+                    $('.citação').css('-webkit-background-clip', 'text')
+                    $('.citação').css('background-image', ' linear-gradient(to left, rgb(0, 142, 207), #3696e4,#9ecdf3,  rgb(0, 142, 207))')
+                    $('.citação').css('-webkit-text-fill-color',' transparent')
+                    $('.ultimasessão').css('background-color', '#4a7cc7')
+                    $('#parte').css('background-color', '#17083F')
+                    $('#parte2').css('background-color', ' #4a7cc7')
+                    $('.t1').css('color', ' #a6d7ff')
+                    $('.video').attr('src', 'GM.mp4')
+                })})
 </script>
 
 
