@@ -54,7 +54,7 @@ body {
     margin-bottom: 400px;
 }
 .text{
-    padding: 40px;
+    padding-top: 10px;
 }
 img, video{
     width: 100%;
@@ -148,7 +148,6 @@ img, video{
 .projeto {
   background-color: white;
   border-radius: 10px;
-  margin: 0px 5px 10px 5px;
   width: 400px;
 }
 .proj{
@@ -197,7 +196,6 @@ img, video{
   background-color: black;
   padding: 5px;
   color: white;
-  margin: 5px;
   border-radius: 10px;
   font-size: 16px;
 }
