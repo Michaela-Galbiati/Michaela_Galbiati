@@ -407,6 +407,7 @@ button:hover {
   display: inline-flex;
   display-text-align: center;
   display-left: 50%;
+  margin: 20px;
 }
 
 svg {
